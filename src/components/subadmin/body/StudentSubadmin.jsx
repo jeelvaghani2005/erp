@@ -200,13 +200,13 @@ const StudentSubadmin = () => {
                                                 className="btn delete-btn">
                                                 Delete
                                             </button>
-                                            <button
+                                            {/* <button
                                                 onClick={() => updatedata(val)}
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#staticBackdrop"
                                                 className="btn update-btn ms-2">
                                                 Update
-                                            </button>
+                                            </button> */}
                                         </td>
                                     </tr>
                                 );

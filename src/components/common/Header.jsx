@@ -7,7 +7,7 @@ const Header = () => {
                 <a
                     className="navbar-brand col-md-3 col-lg-2 me-0 px-3 text-black"
                     href="/">
-                    Company name
+                    Bnw
                 </a>
                 <button
                     className="navbar-toggler position-absolute d-md-none collapsed"

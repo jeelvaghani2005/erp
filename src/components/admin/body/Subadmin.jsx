@@ -18,6 +18,7 @@ const Subadmin = () => {
         dispatch({ type: POST_SUBADMIN_PROGRESS, payload: formdata })
     }
 
+
     const deletedata = (id) => {
         dispatch({ type: DELETE_SUBADMIN_PROGRESS, payload: id })
     }
@@ -103,12 +104,11 @@ const Subadmin = () => {
                                     return (
                                         <tr key={index} className='text-center'>
                                             <td className="text-capitalize">{index + 1}</td>
-                                            <td className="text-capitalize">{val._id}</td>
                                             <td className="text-capitalize">{val.subadmin_name}</td>
                                             <td className="text-capitalize">{val.username}</td>
                                             <td className="text-capitalize">
                                                 <button onClick={() => deletedata(val._id)} className='btn delete-btn'>Delete</button>
-                                                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick={()=>updatedata(val)} className='btn update-btn ms-2'>Update</button>
+                                                {/* <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick={()=>updatedata(val)} className='btn update-btn ms-2'>Update</button> */}
                                             </td>
                                         </tr>
                                     );
