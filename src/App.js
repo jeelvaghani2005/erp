@@ -13,7 +13,7 @@ import Login from './components/Login';
 
 function App() {
 
-  let role = "subadmin"
+  let role = "admin"
 
   if (role === "admin") {
     return (

@@ -21,7 +21,9 @@ export const PostStudent = (action) => {
         }
     })
 }
+
 // delete
+
 export const DeleteStudent = (action) => {
     return axios.delete(BASE_URL + DELETE_STUDENT + action.payload).then((res) => {
         const data = action.payload
@@ -36,9 +38,8 @@ export const DeleteStudent = (action) => {
 // update
 
 export const UpdateStudent = (action) => {
-    console.log(action.payload , " sjpkksdv"  );
-    console.log(action.payload._id);
-    return axios.put(BASE_URL + UPDATE_STUDENT + action.payload._id, action.payload ).then((res) => {
+    
+    return axios.put(BASE_URL + UPDATE_STUDENT + action.payload._id, `${action.payload.student_name}` ).then((res) => {
         const data = action.payload
         const status = res.status
         return {
